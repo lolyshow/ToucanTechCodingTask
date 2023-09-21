@@ -18,7 +18,25 @@ document.getElementById("searchForm").addEventListener("submit", function (e) {
             // handle the response data and update div searchResults 
             const searchResults = document.getElementById("searchResults");
             searchResults.innerHTML = ""; // Clear previous results 
-            
+            // if (data.length === 0) {
+            //     searchResults.textContent = "No results found.";
+            // } else {
+            //     data.forEach((result) => {
+            //         // Create and append result elements (e.g., div, p) to searchResults
+            //         const resultDiv = document.createElement("div");
+            //         resultDiv.className = "result";
+            //         const firstName = document.createElement("p");
+            //         firstName.textContent = "First Name: " + result.firstName;
+            //         const lastName = document.createElement("p");
+            //         lastName.textContent = "Last Name: " + result.lastName;
+            //         const email = document.createElement("p");
+            //         email.textContent = "Email: " + result.email;
+            //         resultDiv.appendChild(firstName);
+            //         resultDiv.appendChild(lastName);
+            //         resultDiv.appendChild(email);
+            //         searchResults.appendChild(resultDiv);
+            //     });
+            // }
         })
         .catch((error) => {
             console.error("Error:", error);

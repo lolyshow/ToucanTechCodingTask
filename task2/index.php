@@ -1,8 +1,8 @@
 <?php
 
-// call config file to establish connection to db
-require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/log.php';
+// call config file to establish connection to db, file to log and to process response
+require_once __DIR__ . '/helper/config.php';
+require_once __DIR__ . '/helper/log.php';
 require_once __DIR__ . '/helper/response_formater.php';
 
 // Get the user's input from the AJAX request
